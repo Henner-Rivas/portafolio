@@ -1,0 +1,44 @@
+.blog__buscador {
+  display: flex;
+  gap: 15px;
+  width: 70%;
+  .blog__buscador__filtro {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    select {
+      font-size: 1rem;
+      height: 2.5rem;
+      padding: 8px;
+      color: #666;
+      border-color: #ccc;
+      border-radius: 2px;
+    }
+  }
+
+  .blog__buscador__buscar {
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 2px;
+    height: 2.5rem;
+    width: 100%;
+    min-width: 200px;
+    input {
+      width: 100%;
+      outline: none;
+      padding: 4px;
+      color: #666;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .icon {
+      color: #666;
+      font-size: 25px;
+    }
+  }
+}

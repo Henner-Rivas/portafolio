@@ -1,0 +1,54 @@
+@use "variablesGlobals" as v;
+
+.encabezado__cantactanos {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 25px;
+
+  .texto {
+    line-height: 35px;
+    text-align: center;
+
+    h3 {
+      font-weight: bold;
+    }
+  }
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 55px;
+    justify-content: center;
+    padding: 15px 20px;
+    margin: 0 auto;
+    align-items: center;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      min-width: 300px;
+      .icon {
+        font-size: 24px;
+        color: #0071e2;
+      }
+      h6 {
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.container-contactame.dark {
+  background: v.$background-dark;
+  color: v.$background-light;
+}

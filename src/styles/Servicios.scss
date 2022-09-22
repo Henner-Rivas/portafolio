@@ -1,0 +1,9 @@
+@use "variablesGlobals" as v;
+
+.container-services {
+  padding-top: 30px;
+}
+.container-services.dark {
+  background: v.$background-dark;
+  color: v.$background-light;
+}

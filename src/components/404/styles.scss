@@ -1,0 +1,19 @@
+.container-404 {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  flex-direction: column;
+  line-height: 50px;
+}
+.icon-404 {
+  font-size: 15rem;
+  color: #0071e2;
+}
+
+.container-404.dark {
+  .icon-404 {
+    color: #4e4e4e !important;
+  }
+}

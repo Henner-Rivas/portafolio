@@ -1,0 +1,10 @@
+.container-recomendaciones {
+  display: flex;
+  flex-direction: column;
+
+  .container-list-recomendaciones {
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+  }
+}

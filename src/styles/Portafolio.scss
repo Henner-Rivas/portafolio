@@ -1,0 +1,51 @@
+@use "variablesGlobals" as v;
+
+.container__portafolio {
+  min-height: 100vh;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.container-category {
+  display: flex;
+  gap: 10px;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+  p {
+    background: v.$color-main-blue;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+}
+
+.container__portafolio.dark {
+  background: v.$background-dark;
+  color: v.$background-light;
+
+  .container-texto h3 {
+    background: v.$background-light !important;
+    color: black !important;
+  }
+
+  .container-category {
+    display: flex;
+    gap: 10px;
+    color: white;
+    p {
+      background: v.$color-dark-grey;
+      padding: 4px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+  }
+  .cards .flip-card .container-texto {
+    h3 {
+      background: v.$color-dark-grey !important;
+      color: white !important;
+    }
+  }
+}

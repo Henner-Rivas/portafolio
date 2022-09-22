@@ -1,0 +1,32 @@
+@use "variablesGlobals" as v;
+
+.container__blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 100px;
+  justify-content: center;
+
+  .container__titulo {
+    margin-bottom: 10px;
+  }
+  .blogs {
+    width: 100%;
+    margin: 70px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.container__blog.dark {
+  background: v.$background-dark;
+  color: v.$background-light;
+
+  .category {
+    color: white !important;
+  }
+}

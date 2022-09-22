@@ -1,0 +1,150 @@
+$blue-1: #0071e2;
+$green-1: #006822;
+@use "../../styles/variablesGlobals" as v;
+
+.container__footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*   min-height: 50vh;
+ */
+  box-sizing: border-box;
+
+  .fist_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    min-height: 5vh;
+  }
+
+  .medio__footer {
+    background: v.$color-main-blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    flex: 1;
+    min-height: 38vh;
+    gap: 60px;
+    padding: 50px 20px;
+
+    .quien_soy {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      justify-content: space-around;
+      box-sizing: border-box;
+      justify-content: space-around;
+      gap: 25px;
+
+      h6 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .icons {
+        display: flex;
+        gap: 15px;
+
+        a {
+          color: white;
+        }
+        .icon:hover {
+          color: $green-1;
+        }
+      }
+    }
+  }
+
+  .buscador {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input {
+      text-decoration: none;
+      outline: none;
+      height: 35px;
+      width: 100%;
+      width: 300px;
+      padding: 3px;
+      padding-left: 8px;
+      border-radius: 4px;
+      border-style: none;
+    }
+  }
+}
+.separar.dark {
+  background: v.$background-dark !important;
+}
+.container__footer.dark {
+  .medio__footer {
+    background: v.$color-dark-grey;
+  }
+  .end__footer {
+    background-color: v.$background-dark;
+  }
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+
+  div {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+
+    p:hover {
+      color: $green-1;
+    }
+    .icon:hover {
+      color: $green-1;
+    }
+  }
+}
+
+.end__footer {
+  background-color: #3d3d3d;
+  color: white;
+  min-height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+
+.separator {
+  margin-top: 25px;
+  border: 0;
+}
+
+.separator--dotter {
+  border: 0;
+  border-bottom: 5px dotted $green-1;
+}
+
+.separar {
+  max-height: 35vh;
+}
+
+@media screen and (max-width: 950px) {
+  .separar {
+    max-height: 18vh;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .separar {
+    max-height: 11vh;
+  }
+}

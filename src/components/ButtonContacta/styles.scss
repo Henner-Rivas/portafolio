@@ -1,0 +1,40 @@
+
+.buttonContactame {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: rgb(102, 102, 102);
+    z-index: 1;
+    background: white;
+    position: relative;
+    font-weight: 600;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: rgb(0, 120, 180) 0px 0px 3px 0px;
+    transition: all 0.2s linear 0s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .buttonContactame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #0071e2;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all 250ms;
+  }
+  
+  .buttonContactame:hover {
+    color: white;
+  }
+  
+  .buttonContactame:hover::before {
+    width: 100%;
+  }

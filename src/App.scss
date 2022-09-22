@@ -1,0 +1,62 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+}
+.app {
+  width: 100%;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+html {
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+  width: 10px;
+  
+ }
+ body::-webkit-scrollbar-track{
+   border-radius: 50px;
+   background-color: #3d3d3d;
+  }
+ body::-webkit-scrollbar-thumb{
+  background-color: black;
+border-radius: 50px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+ul, li, h1, h2, h3, p, button {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+/*                 background: transparent;
+*/                border: 0;
+  outline: 0;
+}
+
+
+#app {
+
+  width: 100%;
+right: 0;
+top: 0;
+left:0;
+bottom: 0;
+}
+
+.container__portafolio{
+  flex-grow: 1;
+}

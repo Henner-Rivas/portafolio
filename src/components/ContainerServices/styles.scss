@@ -1,0 +1,27 @@
+$blue-1: #0071e2;
+
+.contianer_card_servicies {
+  display: flex;
+  /* justify-content: space-around;
+ 
+*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 25px;
+  gap: 25px;
+  .service {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+
+    .icon {
+      font-size: 35px;
+      color: $blue-1;
+    }
+  }
+}

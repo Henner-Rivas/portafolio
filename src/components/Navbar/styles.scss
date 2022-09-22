@@ -1,0 +1,292 @@
+/* Variables */
+@use "../../styles/variablesGlobals" as v;
+
+$dark: black;
+.navbar {
+  background: v.$background-light;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+  align-items: center;
+}
+#navbar_logo {
+  height: 70px;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: inherit;
+  }
+}
+
+.fa-gem {
+  margin-right: 0.5rem;
+}
+.navbar__links.active {
+  color: v.$color-main-blue;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__item {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 5px;
+  border-radius: 7px;
+}
+
+.navbar__menu li:hover .navbar__links {
+  color: white !important;
+  transition: all 0.2s ease-in-out;
+  background: v.$color-main-blue;
+  border-radius: 7px;
+}
+
+.navbar__links {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  height: 100%;
+  padding: 0 1rem;
+  align-items: center;
+  position: relative;
+}
+.navbar__links:hover {
+  color: #ff8177;
+  transition: all 0.3s ease;
+}
+@media screen and (min-width: 925px) {
+  .contaier_switch2 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 925px) {
+  .contaier_switch2 {
+    margin-right: 75px;
+    margin-top: 6px;
+  }
+
+  .contaier_switch1 {
+    display: none !important;
+  }
+  .navbar__menu li .navbar__links::before {
+    width: inherit;
+    margin-left: 0rem !important;
+  }
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+
+    transform: translateY(-150%);
+    height: 60vh;
+    z-index: -1;
+    background: #ffffff;
+    margin-top: 80px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+
+  .navbar__menu.active {
+    transition: all 0.5s ease;
+    height: 60vh;
+    font-size: 1.6rem;
+
+    transform: translateY(50%);
+  }
+
+  #navbar_logo {
+    padding-left: 25px;
+  }
+
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: rgb(0, 0, 0);
+  }
+
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .navbar__btn {
+    padding-bottom: 2rem;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    margin: 0;
+  }
+
+  .navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* swicth */
+
+/* From uiverse.io by @satyamchaudharydev */
+/* The switch - the box around the slider */
+.contaier_switch1,
+.contaier_switch2 {
+  padding: 0px 15px;
+  display: block;
+}
+.switch {
+  /* --moon-mask: ; */
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar_container {
+    padding: 0px !important;
+  }
+  #navbar_logo {
+    padding-left: 0 !important;
+  }
+
+  .contaier_switch2 {
+    margin-right: 45px !important;
+    margin-top: 6px;
+  }
+}
+.navbar.dark {
+  background: v.$background-dark;
+  border-bottom: 0.5px solid #f4f4f5;
+  .navbar__links {
+    color: white !important;
+  }
+  .navbar__links.active {
+    font-weight: 550;
+  }
+  .navbar__menu li:hover .navbar__links {
+    color: black !important;
+    transition: all 0.2s ease-in-out;
+    background: v.$background-light;
+    border-radius: 7px;
+  }
+  .navbar__toggle {
+    color: white !important;
+  }
+  .navbar__toggle .bar {
+    background: white !important;
+  }
+  .buttonContactame::before {
+    background-color: white !important;
+  }
+  .buttonContactame {
+    color: black;
+  }
+  .navbar__menu.active {
+    background: v.$background-dark !important;
+  }
+}
