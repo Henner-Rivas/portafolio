@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context";
 
 const Footer = () => {
-  const { setMode, mode } = useContext(Context);
+  const { mode } = useContext(Context);
 
   return (
     <>
@@ -59,7 +59,7 @@ const Footer = () => {
 
             <div className="icons">
               <a
-                href="https://www.instagram.com/herivas02/"
+                href="https://www.instagram.com/hennerdev/"
                 target="_blank"
                 rel="noreferrer"
               >

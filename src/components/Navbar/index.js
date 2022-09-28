@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./styles.scss";
 import logo from "../../assets/logo.png";
 import ButtonContacta from "../ButtonContacta";
@@ -47,27 +47,43 @@ const Navbar = () => {
 
         <ul className={`navbar__menu ${claseMenuLinks}`}>
           <li className="navbar__item">
-            <NavLink to="/" className={`navbar__links`}>
+            <NavLink
+              to="/"
+              className={`navbar__links`}
+              onClick={() => setMenu(!menu)}
+            >
               Inicio
             </NavLink>
           </li>
           <li className="navbar__item">
-            <NavLink to="/portafolio" className="navbar__links">
+            <NavLink
+              to="/portafolio"
+              className="navbar__links"
+              onClick={() => setMenu(!menu)}
+            >
               Portafolio
             </NavLink>
           </li>
           <li className="navbar__item">
-            <NavLink to="/servicios" className="navbar__links">
+            <NavLink
+              to="/servicios"
+              className="navbar__links"
+              onClick={() => setMenu(!menu)}
+            >
               Servicios
             </NavLink>
           </li>
           <li className="navbar__item">
-            <NavLink to="/blog" className="navbar__links">
+            <NavLink
+              to="/blog"
+              className="navbar__links"
+              onClick={() => setMenu(!menu)}
+            >
               Blog
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contactame">
+            <NavLink to="/contactame" onClick={() => setMenu(!menu)}>
               <ButtonContacta />
             </NavLink>
           </li>

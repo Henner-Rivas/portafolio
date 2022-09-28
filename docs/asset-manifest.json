@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.08ba35f7.css",
-    "main.js": "/static/js/main.60e88dbc.js",
+    "main.css": "/static/css/main.e8f275ed.css",
+    "main.js": "/static/js/main.fc320f1b.js",
     "static/media/Henner Rivas Berrio curriculum.pdf": "/static/media/Henner Rivas Berrio curriculum.2a11f21587bc27842144.pdf",
     "static/media/php.png": "/static/media/php.00baeb442607d6f50cfe.png",
     "static/media/Bootstrap.png": "/static/media/Bootstrap.34ce1e8a666af457cf08.png",
@@ -18,11 +18,11 @@
     "static/media/angular.png": "/static/media/angular.9ea346b7b20da55074a5.png",
     "static/media/css.png": "/static/media/css.56736871cdf541a60f21.png",
     "index.html": "/index.html",
-    "main.08ba35f7.css.map": "/static/css/main.08ba35f7.css.map",
-    "main.60e88dbc.js.map": "/static/js/main.60e88dbc.js.map"
+    "main.e8f275ed.css.map": "/static/css/main.e8f275ed.css.map",
+    "main.fc320f1b.js.map": "/static/js/main.fc320f1b.js.map"
   },
   "entrypoints": [
-    "static/css/main.08ba35f7.css",
-    "static/js/main.60e88dbc.js"
+    "static/css/main.e8f275ed.css",
+    "static/js/main.fc320f1b.js"
   ]
 }

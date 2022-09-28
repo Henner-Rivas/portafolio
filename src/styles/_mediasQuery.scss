@@ -77,6 +77,12 @@
   .container_detalle .container_detalle_contenido {
     width: 90% !important;
   }
+
+  .right-header {
+    .title-name {
+      font-size: 1.5rem !important;
+    }
+  }
 }
 @media screen and (max-width: 800px) {
   .carrusel-items {
