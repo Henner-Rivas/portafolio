@@ -17,6 +17,7 @@ import figma from "../../assets/figma.png";
 import material from "../../assets/material-ui.png";
 import jquery_logo from "../../assets/jquery_logo.png";
 import nextjs from "../../assets/nextjs.png";
+import ts_logo from "../../assets/ts_logo.png";
 
 import "./styles.scss";
 
@@ -68,6 +69,9 @@ const Habilidades = () => {
             </div>
             <div className="carrusel-item">
               <img src={reactLogo} alt="React" title="React" />
+            </div>
+            <div className="carrusel-item">
+              <img src={ts_logo} alt="Typescript " title="Typescript" />
             </div>
             <div className="carrusel-item">
               <img src={Php} alt="PHP" title="PHP" />
