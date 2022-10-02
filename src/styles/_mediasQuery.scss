@@ -97,3 +97,10 @@
     }
   }
 }
+@media screen and (max-width: 930px) {
+  .navbar.dark {
+    .navbar__menu.active {
+      background: v.$background-dark !important;
+    }
+  }
+}

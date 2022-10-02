@@ -31,15 +31,13 @@ const Formulario = () => {
         console.log(data.err);
       } else {
         setSend(true);
-        /*
-         */ setTimeout(() => {
+        setTimeout(() => {
           setSend(false);
-        }, 1500);
+        }, 4000);
         resetForm();
       }
     });
-    /*       .catch(console.log("any error"));
-     */
+
     function resetForm() {
       onChangeNombre();
       onChangeAsunto();
@@ -47,45 +45,54 @@ const Formulario = () => {
       onChangeEmail();
     }
   };
+
   return (
     <div className="container_formulario">
-      <form onSubmit={formSubmit}>
-        <div className="grup__input">
+      {send && (
+        <div className="alert-success">
+          {" "}
+          Muchas gracias por contactarme, pronto te responderé💝{" "}
+        </div>
+      )}
+      {!send && (
+        <form onSubmit={formSubmit}>
+          <div className="grup__input">
+            <input
+              type="text"
+              placeholder="Nombre"
+              value={nombre}
+              onChange={(e) => onChangeNombre(e)}
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={onChangeEmail}
+              required
+            />
+          </div>
           <input
             type="text"
-            placeholder="Nombre"
-            value={nombre}
-            onChange={(e) => onChangeNombre(e)}
+            placeholder="Asunto"
+            value={asunto}
+            onChange={onChangeAsunto}
             required
           />
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={onChangeEmail}
-            required
-          />
-        </div>
-        <input
-          type="text"
-          placeholder="Asunto"
-          value={asunto}
-          onChange={onChangeAsunto}
-          required
-        />
 
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          value={mensaje}
-          placeholder="Mensaje"
-          onChange={onChangeMensaje}
-          required
-        ></textarea>
-        <input type="submit" value="Enviar mensaje" />
-      </form>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            value={mensaje}
+            placeholder="Mensaje"
+            onChange={onChangeMensaje}
+            required
+          ></textarea>
+          <input type="submit" value="Enviar mensaje" />
+        </form>
+      )}
     </div>
   );
 };

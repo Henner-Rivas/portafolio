@@ -22,7 +22,7 @@
   },
   {
     "id": 3,
-    "nombre": "Personal",
+    "nombre": "e-commerce ",
     "hechaCon": "Contruida con React y firebase",
     "descricion": "Este es un pequeño e-commerce construido ",
     "image": "https://i.ibb.co/GF7qg1K/e-ecomerce.png",

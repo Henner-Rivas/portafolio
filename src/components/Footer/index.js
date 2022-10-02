@@ -109,10 +109,10 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="buscador">
+          {/*    <div className="buscador">
             <h4>Buscador</h4>
             <input type="text" placeholder="Ingresa tu búsqueda" />
-          </div>
+          </div> */}
         </div>
 
         <div className="end__footer">

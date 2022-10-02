@@ -83,6 +83,15 @@ button {
     background: v.$color-dark-grey !important;
     color: v.$background-light;
   }
+
+  .main-btn {
+    .btn-text {
+      background: v.$color-dark-grey !important;
+    }
+  }
+  .container__titulo h3::before {
+    background: v.$background-dark !important;
+  }
 }
 
 .container-pdf {

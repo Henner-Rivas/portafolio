@@ -28,6 +28,7 @@ const BlogDetalle = () => {
   }, [blog, id]);
 
   let { title, date, category, content } = blog;
+
   return (
     <div className={mode ? "container_detalle dark" : "container_detalle"}>
       <div className="encabezado">
@@ -41,9 +42,28 @@ const BlogDetalle = () => {
           <div className="compartir">
             <h4>¡Compártelo!</h4>
             <div className="icons">
-              <AiFillFacebook className="icon" />
-              <AiFillLinkedin className="icon" />
-              <AiFillTwitterSquare className="icon" />
+              <a
+                href={`http://www.facebook.com/sharer.php?u=henner-rivas.vercel.app/blog/${id}&t=pagina de desarrollo web`}
+                rel="noreferrer"
+                className="icon"
+                target="_blank"
+              >
+                <AiFillFacebook className="icon" />
+              </a>
+              <a
+                href={`http://www.linkedin.com/shareArticle?url=https://henner-rivas.vercel.app/blog/${id}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillLinkedin className="icon" />
+              </a>
+              <a
+                href={`https://twitter.com/intent/tweet?text=MIEpresa&url=https://henner-rivas.vercel.app/blog/${id}&via=Empresa&hashtags=#miempresa`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillTwitterSquare className="icon" />
+              </a>
             </div>
           </div>
         </div>
