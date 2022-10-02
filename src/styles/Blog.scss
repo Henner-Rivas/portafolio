@@ -29,4 +29,7 @@
   .category {
     color: white !important;
   }
+  .container__titulo h3::before {
+    background: v.$color-dark-grey !important;
+  }
 }

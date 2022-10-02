@@ -1,3 +1,5 @@
+@use "variablesGlobals" as v;
+
 @media screen and (max-width: 600px) {
   header {
     padding: 0;
@@ -88,5 +90,10 @@
   .carrusel-items {
     padding: 30px 100px;
     justify-content: center;
+  }
+  .navbar.dark {
+    .navbar__menu.active {
+      background: v.$background-dark !important;
+    }
   }
 }

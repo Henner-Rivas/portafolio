@@ -1,10 +1,12 @@
-import React from 'react'
-import './styles.scss'
+import React from "react";
+import { Bounce } from "react-awesome-reveal";
+import "./styles.scss";
 const ButtonContacta = () => {
   return (
-         <button className='buttonContactame'> Contactame 
-        </button> 
-  )
-}
+    <Bounce triggerOnce={true} damping={1} duration={3000}>
+      <button className="buttonContactame"> Contactame</button>
+    </Bounce>
+  );
+};
 
-export default ButtonContacta
+export default ButtonContacta;

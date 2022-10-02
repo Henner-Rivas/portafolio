@@ -1,4 +1,5 @@
 $blue-1: #0071e2;
+@use "../../styles/variablesGlobals" as v;
 
 .contianer_card_servicies {
   display: flex;
@@ -21,7 +22,16 @@ $blue-1: #0071e2;
 
     .icon {
       font-size: 35px;
-      color: $blue-1;
+      color: v.$color-main-blue;
     }
+  }
+}
+.container-services.dark {
+  .icon {
+    font-size: 35px;
+    color: v.$color-dark-grey !important;
+  }
+  .container__titulo h3::before {
+    background: v.$color-dark-grey !important;
   }
 }

@@ -7,7 +7,7 @@
     "image": "https://i.ibb.co/ctKDNZH/task-Machine-min.png%22%20alt=%22task-Machine-min",
     "LinkEnWeb": "https://henner-rivas.github.io/Taksmachine/",
     "LinkRepositorio": "https://github.com/Henner-Rivas/Taksmachine",
-    "category": "Plazit"
+    "category": "Platzi"
   },
   {
     "id": 2,
@@ -22,13 +22,13 @@
   },
   {
     "id": 3,
-    "nombre": "Eccomerce",
+    "nombre": "Personal",
     "hechaCon": "Contruida con React y firebase",
     "descricion": "Este es un pequeño e-commerce construido ",
     "image": "https://i.ibb.co/GF7qg1K/e-ecomerce.png",
     "LinkRepositorio": "https://github.com/Henner-Rivas/ecommerce",
     "LinkEnWeb": "https://idyllic-meerkat-79f4df.netlify.app/",
-    "category": "e-commerce"
+    "category": "Personal"
   },
   {
     "id": 4,
@@ -60,6 +60,7 @@
 
     "category": "Personal"
   },
+
   {
     "id": 7,
     "nombre": "Fedecutch",
@@ -68,5 +69,29 @@
     "image": "https://i.ibb.co/31QJkc4/feducutch.png",
     "LinkEnWeb": "https://fedecutch.com",
     "category": "Freelance"
+  },
+  {
+    "id": 8,
+    "nombre": "App mapas",
+
+    "hechaCon": "React y TypeScript",
+    "descricion": "App mapas es un aplicación creada para buscar lugares y más, creada con la API de MapBox",
+    "image": "https://i.ibb.co/tQXcbcL/mapa.png",
+    "LinkEnWeb": "https://app-mapas.netlify.app/",
+    "LinkRepositorio": "https://github.com/Henner-Rivas/app-mapas",
+
+    "category": "Personal"
+  },
+  {
+    "id": 9,
+    "nombre": "Cats App",
+
+    "hechaCon": "JavaScript valilla",
+    "descricion": "Esta es un App que permite mostrar gatos de fomma aleatoria, y ademas podemos selecionar gatos favoritos, elminarlos y ademas podemos subir nuestro gatos",
+    "image": "https://i.ibb.co/6HfnwR6/cats-min.png",
+    "LinkEnWeb": "https://app-cats.netlify.app/",
+    "LinkRepositorio": "https://github.com/Henner-Rivas/cats-app",
+
+    "category": "Platzi"
   }
 ]

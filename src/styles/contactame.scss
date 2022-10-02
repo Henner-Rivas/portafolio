@@ -51,4 +51,11 @@
 .container-contactame.dark {
   background: v.$background-dark;
   color: v.$background-light;
+
+  .container__titulo h3::before {
+    background: v.$color-dark-grey !important;
+  }
+  .icon {
+    color: v.$color-dark-grey !important;
+  }
 }

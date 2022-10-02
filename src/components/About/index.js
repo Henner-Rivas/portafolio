@@ -2,7 +2,8 @@ import React from "react";
 import { AiOutlineDownload } from "react-icons/ai";
 import "./styles.scss";
 import Typed from "typed.js";
-import foto from "../../assets/fotoHenner.jpg";
+import foto from "../../assets/foto.jpeg";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   // Create reference to store the DOM element containing the animation
@@ -56,18 +57,20 @@ const About = () => {
               eficiencia puedo crear una aplicación desde cero o continuar con
               código existente con facilidad.
             </p>
-            <div className="main-btn">
-              <a href="./pages/pdf" target="_blank">
-                <div className="btn-text">
-                  <AiOutlineDownload fontSize="30px" />
-                  Download CV
-                </div>
-              </a>
+            <Fade direction={"right"} triggerOnce={true}>
+              <div className="main-btn">
+                <a href="./pages/pdf" target="_blank">
+                  <div className="btn-text">
+                    <AiOutlineDownload fontSize="30px" />
+                    Download CV
+                  </div>
+                </a>
 
-              <span className="btn-icon">
-                <i className="fas fa-download"></i>
-              </span>
-            </div>
+                <span className="btn-icon">
+                  <i className="fas fa-download"></i>
+                </span>
+              </div>
+            </Fade>
           </div>
         </div>
       </div>

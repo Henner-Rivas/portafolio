@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useState, useMemo, useEffect } from "react";
 import ListOfCardPortafolio from "../components/ListOfCardPortafolio";
 import { Context } from "../context";
@@ -10,11 +11,9 @@ const Portafolio = () => {
     proyectos
   );
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const sortProyectos = {
     todo: "Todo",
     platzi: "Platzi",
-    "e-commerce": "e-commerce",
     "landing-page": "Landing page",
     freelance: "Freelance",
     personal: "Personal",
@@ -51,14 +50,7 @@ const Portafolio = () => {
       });
       return freelance;
     }
-    if (filter === sortProyectos["e-commerce"]) {
-      let commerce = proyectosdb.filter((el) => {
-        return el.category
-          .toLowerCase()
-          .includes(sortProyectos["e-commerce"].toLowerCase());
-      });
-      return commerce;
-    }
+
     if (filter === sortProyectos["landing-page"]) {
       let landingPage = proyectosdb.filter((el) =>
         el.category
@@ -70,7 +62,7 @@ const Portafolio = () => {
     if (filter === sortProyectos.todo) {
       return proyectosdb;
     }
-  }, [filter, sortProyectos]);
+  }, [filter]);
 
   useEffect(() => {
     setProyectos(filterMemo);
@@ -99,9 +91,7 @@ const Portafolio = () => {
           <p onClick={() => setFilter(sortProyectos["landing-page"])}>
             {sortProyectos["landing-page"]}
           </p>
-          <p onClick={() => setFilter(sortProyectos["e-commerce"])}>
-            {sortProyectos["e-commerce"]}
-          </p>
+
           <p onClick={() => setFilter(sortProyectos.personal)}>
             {sortProyectos.personal}
           </p>
