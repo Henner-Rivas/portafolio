@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import About from "../components/About";
 import Habilidades from "../components/Habilidades";
 import { Context } from "../context";
@@ -7,11 +8,22 @@ const Inicio = () => {
   const { mode } = useContext(Context);
 
   return (
-    <div className={mode ? "container_inicio dark" : "container_inicio"}>
-      <About />
+    <>
+      <Helmet>
+        <title> Henner Rivas Berrio - Full Stack Developer </title>
 
-      <Habilidades />
-    </div>
+        <meta
+          name="descripcion"
+          content="Henner Rivas Berrio, es un Full Stack Developer e Ingeniero en telecomunicaciones e informatica"
+        />
+      </Helmet>
+
+      <div className={mode ? "container_inicio dark" : "container_inicio"}>
+        <About />
+
+        <Habilidades />
+      </div>
+    </>
   );
 };
 

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "Taks Machine",
-    "hechaCon": "Contruida con React",
+    "hechaCon": "React,CSS ",
     "descricion": "Esta aplicación  te permite crear un lista de tareas que podras eliminar, editar y agrear",
     "image": "https://i.ibb.co/ctKDNZH/task-Machine-min.png%22%20alt=%22task-Machine-min",
     "LinkEnWeb": "https://henner-rivas.github.io/Taksmachine/",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "nombre": "Github use",
-    "hechaCon": "Contruda con React",
+    "hechaCon": "React,Material UI",
     "descricion": "Esta aplicación perimite buscar usuarios de Github",
     "image": "https://i.ibb.co/QCn5drL/githubuse.png",
     "LinkEnWeb": "https://zippy-cucurucho-3670ce.netlify.app/",
@@ -22,18 +22,18 @@
   },
   {
     "id": 3,
-    "nombre": "e-commerce ",
-    "hechaCon": "Contruida con React y firebase",
+    "nombre": "e-commerce",
+    "hechaCon": "React,Firebase,Material UI,Node.js",
     "descricion": "Este es un pequeño e-commerce construido ",
     "image": "https://i.ibb.co/GF7qg1K/e-ecomerce.png",
     "LinkRepositorio": "https://github.com/Henner-Rivas/ecommerce",
     "LinkEnWeb": "https://idyllic-meerkat-79f4df.netlify.app/",
-    "category": "Personal"
+    "category": "Challenge"
   },
   {
     "id": 4,
     "nombre": "CorpoAtrato",
-    "hechaCon": "Contruida con React",
+    "hechaCon": "React,Sass ,Bootstrap",
     "descricion": "Landing page creada para la Asociacion de egresados por defenza de la UTCH",
     "image": "https://i.ibb.co/qJRzXjh/corpoatrato.png",
     "LinkEnWeb": "https://www.corpoatrato.com/",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "nombre": "ceipsi",
-    "hechaCon": "Contruida con React",
+    "hechaCon": "React, CSS,Bootstrap",
     "descricion": "Landing page creada para la Asociacion de egresados por defenza de la UTCH",
     "image": "https://i.ibb.co/mGFrMxD/ceipsi.png",
     "LinkEnWeb": "https://ceipsi.com/quienessomos",
@@ -52,19 +52,19 @@
     "id": 6,
     "nombre": "Clon tello",
 
-    "hechaCon": "Contruida con React",
+    "hechaCon": "React,styled-components",
     "descricion": "Este es un proyecto se construllo parte de la fucionalidad de tello",
     "image": "https://i.ibb.co/2tZT63N/tello.png",
     "LinkEnWeb": "https://henner-rivas.github.io/clon-trello/",
     "LinkRepositorio": "https://github.com/Henner-Rivas/clon-trello",
 
-    "category": "Personal"
+    "category": "Challenge"
   },
 
   {
     "id": 7,
     "nombre": "Fedecutch",
-    "hechaCon": "Contruida con React",
+    "hechaCon": "WordPress",
     "descricion": "Sitio web creado para la Fundación Deportiva y Cultural utch",
     "image": "https://i.ibb.co/31QJkc4/feducutch.png",
     "LinkEnWeb": "https://fedecutch.com",
@@ -74,19 +74,19 @@
     "id": 8,
     "nombre": "App mapas",
 
-    "hechaCon": "React y TypeScript",
+    "hechaCon": "React,TypeScript",
     "descricion": "App mapas es un aplicación creada para buscar lugares y más, creada con la API de MapBox",
     "image": "https://i.ibb.co/tQXcbcL/mapa.png",
     "LinkEnWeb": "https://app-mapas.netlify.app/",
     "LinkRepositorio": "https://github.com/Henner-Rivas/app-mapas",
 
-    "category": "Personal"
+    "category": "Challenge"
   },
   {
     "id": 9,
     "nombre": "Cats App",
 
-    "hechaCon": "JavaScript valilla",
+    "hechaCon": "JavaScript valilla,CSS",
     "descricion": "Esta es un App que permite mostrar gatos de fomma aleatoria, y ademas podemos selecionar gatos favoritos, elminarlos y ademas podemos subir nuestro gatos",
     "image": "https://i.ibb.co/6HfnwR6/cats-min.png",
     "LinkEnWeb": "https://app-cats.netlify.app/",

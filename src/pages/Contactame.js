@@ -6,56 +6,69 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { Context } from "../context";
 import "../styles/contactame.scss";
 import Formulario from "../components/Formulario";
+import { Helmet } from "react-helmet-async";
+
 const Contactame = () => {
   const { mode } = useContext(Context);
 
   return (
-    <div
-      className={mode ? "container-contactame dark" : "container-contactame"}
-    >
+    <>
+      <Helmet>
+        <title>Contáctame - Henner Rivas Berrio </title>
+        <meta
+          name="descripcion"
+          content="Estos son algunos de los proyectos en los que he trabajado, algunos personales y otros para empresas
+
+      "
+        />
+      </Helmet>
       <div
-        className={
-          mode ? "encabezado__cantactanos dark" : "encabezado__cantactanos"
-        }
+        className={mode ? "container-contactame dark" : "container-contactame"}
       >
-        <div className="container__titulo">
-          <h3>Contactame</h3>
-        </div>
-        <div className="texto">
-          <h3> ¿Tienes alguna pregunta?</h3>
-          <h5> Estoy a tu servicio</h5>
-        </div>
-        <div className="icons">
-          <div className="item">
-            <AiFillPhone className="icon" />
-            <h6>Llamane</h6>
-            <p> +57 3225885033</p>
+        <div
+          className={
+            mode ? "encabezado__cantactanos dark" : "encabezado__cantactanos"
+          }
+        >
+          <div className="container__titulo">
+            <h3>Contáctame</h3>
           </div>
-          <div className="item">
-            <GoLocation className="icon" />
-            <h6>Ubicación</h6>
-            <p> Flores de buenaños, Quibdo -colombia</p>
+          <div className="texto">
+            <h3> ¿Tienes alguna pregunta?</h3>
+            <h5> Estoy a tu servicio</h5>
           </div>
-          <div className="item">
-            <AiFillLinkedin className="icon" />
-            <h6>linkedin</h6>
-            <p>www.linkedin.com/in/henner-rivas</p>
-          </div>
-          <div className="item">
-            <MdEmail className="icon" />
+          <div className="icons">
+            <div className="item">
+              <AiFillPhone className="icon" />
+              <h6>Llamane</h6>
+              <p> +57 3225885033</p>
+            </div>
+            <div className="item">
+              <GoLocation className="icon" />
+              <h6>Ubicación</h6>
+              <p> Flores de buenaños, Quibdo -colombia</p>
+            </div>
+            <div className="item">
+              <AiFillLinkedin className="icon" />
+              <h6>linkedin</h6>
+              <p>www.linkedin.com/in/henner-rivas</p>
+            </div>
+            <div className="item">
+              <MdEmail className="icon" />
 
-            <h6>Email</h6>
-            <p>berrio320683@gmail.com</p>
+              <h6>Email</h6>
+              <p>berrio320683@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="texto">
+            <h3>Enviame un email o llena este formulario</h3>
+            <h5> Seria un placer responder tu mensaje</h5>
           </div>
         </div>
-
-        <div className="texto">
-          <h3>Enviame un email o llena este formulario</h3>
-          <h5> Seria un placer responder tu mensaje</h5>
-        </div>
+        <Formulario />
       </div>
-      <Formulario />
-    </div>
+    </>
   );
 };
 
