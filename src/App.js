@@ -1,8 +1,7 @@
 import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
-/* import Inicio from "./pages/Inicio";
- */ import Footer from "./components/Footer";
+ import Footer from "./components/Footer";
 import Portafolio from "./pages/Portafolio";
 import IconWhatsapp from "./components/Whatsapp";
 import Contactame from "./pages/Contactame";

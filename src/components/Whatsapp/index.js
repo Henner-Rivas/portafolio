@@ -10,9 +10,11 @@ const IconWhatsapp = () => {
   const buttonWhatsapp = openButtonWhatsapp
     ? "is-active-whatsapp-popup"
     : false;
-  const mensaje = useInputValue("");
+    const [mensaje, onChangeMensaje] = useInputValue("");
+
   const handleClick = () => {
-    let relmsg = mensaje.value.replace(/ /g, "%20");
+    let relmsg = mensaje.replace(/ /g, "%20");
+    
     window.open(`https://wa.me/+573225885033?text=${relmsg}`, "_blank");
   };
   return (
@@ -35,8 +37,8 @@ const IconWhatsapp = () => {
             id="whats-in"
             type="text"
             placeholder="Escribir mensaje..."
-            value={mensaje.value}
-            onChange={(e) => mensaje.onChange(e)}
+            value={mensaje}
+            onChange={onChangeMensaje}
           />
           <button
             className="send-msPopup"
