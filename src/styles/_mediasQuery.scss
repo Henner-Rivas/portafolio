@@ -1,32 +1,66 @@
 @use "variablesGlobals" as v;
 
 @media screen and (max-width: 600px) {
-  header {
+
+  .container_inicio{
+
+    .container-about{
+      min-height: 0px !important;
+    }
+   display: flex;
+   flex-direction: column;
+  .header {
+    min-height: auto;
     padding: 0;
+    
     .header-content {
-      grid-template-columns: repeat(1, 1fr);
-      padding-bottom: 6rem;
+     display: flex !important;
+      padding-bottom: 0 !important;
+      flex-direction: column;
+      min-height: 0px !important;
+
     }
     .left-header {
-      margin-top: 20px;
+     padding-top: 15px;
+      .image{
+        height: 200px;
+        width: 100%;
+        background-color: transparent !important;
+        transition: all 0.4s ease-in-out;
+        z-index: 4;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        .h-shape{
+          background-color: transparent !important;
+        }
+     
+        img{
+          width: 200px;
+height: 200px;
+border-radius: 50%;
+        }
+      }
     }
     .right-header {
       grid-row: 1;
-      padding-right: 0rem !important;
-      width: 90%;
+      padding:10px !important;
+      width: 100%;
       margin: 0 auto;
+
       .name {
-        font-size: 2.5rem !important;
         text-align: center;
         padding-top: 3rem;
       }
+      
     }
     .header-content .left-header .image {
       margin: 0 auto;
       width: 90%;
     }
   }
-
+}
   /* footer  */
 
   .medio__footer {
@@ -84,6 +118,10 @@
     .title-name {
       font-size: 1.5rem !important;
     }
+    .name {
+      font-size: 2rem !important;
+
+    }
   }
 
   .container__portafolio {
@@ -91,10 +129,14 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .carrusel-items {
-    padding: 30px 100px;
-    justify-content: center;
-  }
+  .container__carrucel{
+    padding-top: 20px;
+    .carrusel-items {
+      padding: 30px 100px;
+      justify-content: center;
+    }
+  } 
+
   .navbar.dark {
     .navbar__menu.active {
       background: v.$background-dark !important;

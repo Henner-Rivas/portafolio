@@ -1,5 +1,7 @@
 @use "variablesGlobals" as v;
 
+.container-contactame{
+
 .encabezado__cantactanos {
   justify-content: center;
   align-items: center;
@@ -9,6 +11,7 @@
   gap: 15px;
   width: 100%;
   padding: 25px;
+ 
 
   .texto {
     line-height: 35px;
@@ -47,7 +50,7 @@
     }
   }
 }
-
+}
 .container-contactame.dark {
   background: v.$background-dark;
   color: v.$background-light;

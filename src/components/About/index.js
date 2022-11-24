@@ -15,7 +15,7 @@ const About = () => {
     const options = {
       strings: [
         "Ingeniero en telecomunicaciones e informatica",
-        "Desarrollador fullstack",
+        "Desarrollador full-stack",
         "Desarrollador frontend",
       ],
       typeSpeed: 70,
